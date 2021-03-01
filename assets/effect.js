@@ -40,6 +40,28 @@ $('document').ready(function(){
 		$('body').css('backgroud-color','#FFF');
 		$('body').addClass('peach-after');
 		$(this).fadeOut('slow').delay(6000).promise().done(function(){
+			$('#balloons_flying').fadeIn('slow');
+		});
+	});
+
+	$('#balloons_flying').click(function(){
+		$('.balloon-border').animate({top:-500},8000);
+		$('#b1,#b4,#b5,#b7').addClass('balloons-rotate-behaviour-one');
+		$('#b2,#b3,#b6').addClass('balloons-rotate-behaviour-two');
+		// $('#b3').addClass('balloons-rotate-behaviour-two');
+		// $('#b4').addClass('balloons-rotate-behaviour-one');
+		// $('#b5').addClass('balloons-rotate-behaviour-one');
+		// $('#b6').addClass('balloons-rotate-behaviour-two');
+		// $('#b7').addClass('balloons-rotate-behaviour-one');
+		loopOne();
+		loopTwo();
+		loopThree();
+		loopFour();
+		loopFive();
+		loopSix();
+		loopSeven();
+		
+		$(this).fadeOut('slow').delay(5000).promise().done(function(){
 			$('#bannar_coming').fadeIn('slow');
 		});
 	});
@@ -47,7 +69,7 @@ $('document').ready(function(){
 	$('#bannar_coming').click(function(){
 		$('.bannar').addClass('bannar-come');
 		$(this).fadeOut('slow').delay(6000).promise().done(function(){
-			$('#balloons_flying').fadeIn('slow');
+			$('#cake_fadein').fadeIn('slow');
 		});
 	});
 
@@ -100,29 +122,7 @@ $('document').ready(function(){
 		$('#b7').animate({left:randleft,bottom:randtop},10000,function(){
 			loopSeven();
 		});
-	}
-
-	$('#balloons_flying').click(function(){
-		$('.balloon-border').animate({top:-500},8000);
-		$('#b1,#b4,#b5,#b7').addClass('balloons-rotate-behaviour-one');
-		$('#b2,#b3,#b6').addClass('balloons-rotate-behaviour-two');
-		// $('#b3').addClass('balloons-rotate-behaviour-two');
-		// $('#b4').addClass('balloons-rotate-behaviour-one');
-		// $('#b5').addClass('balloons-rotate-behaviour-one');
-		// $('#b6').addClass('balloons-rotate-behaviour-two');
-		// $('#b7').addClass('balloons-rotate-behaviour-one');
-		loopOne();
-		loopTwo();
-		loopThree();
-		loopFour();
-		loopFive();
-		loopSix();
-		loopSeven();
-		
-		$(this).fadeOut('slow').delay(5000).promise().done(function(){
-			$('#cake_fadein').fadeIn('slow');
-		});
-	});	
+	}	
 
 	$('#cake_fadein').click(function(){
 		$('.cake').fadeIn('slow');
