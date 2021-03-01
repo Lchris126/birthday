@@ -32,12 +32,12 @@ var config = {
     // 按钮文字描述, 以下是默认的按钮文字，英文的，您可以改成你喜欢的文字
     desc: {
         turn_on: "Turn On Lights",
+        story: "A mesage for you",
         play: "Play Music",
         balloons_flying: "Fly With Balloons",
         bannar_coming: "Let's Go",
         cake_fadein: "There Something Missing",
         light_candle: "Bling Bling",
-        story: "A mesage for you",
         wish_message: "Marry You",
     }
 };
