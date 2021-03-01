@@ -38,7 +38,7 @@ var config = {
         balloons_flying: "Fly With Balloons",
         cake_fadein: "Anything Else",
         light_candle: "Bling Bling",
-        wish_message: "Will You Marry Me?",
+        wish_message: "Marry You",
         story: "A MESSAGE FOR YOU",
     }
 };
