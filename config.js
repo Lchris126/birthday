@@ -34,11 +34,11 @@ var config = {
     desc: {
         turn_on: "Turn On Lights",
         play: "Play Music",
-        bannar_coming: "Let's Decorate",
         balloons_flying: "Fly With Balloons",
-        cake_fadein: "Anything Else",
+        bannar_coming: "Let's Go",
+        cake_fadein: "There Something Missing",
         light_candle: "Bling Bling",
+        story: "A mesage for you",
         wish_message: "Marry You",
-        story: "A MESSAGE FOR YOU",
     }
 };
