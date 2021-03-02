@@ -42,8 +42,9 @@ $('document').ready(function(){
 			i=i+1;
 			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
 			if(i==50){
-				$("p:nth-child(49)").fadeOut('slow');
-				
+				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
+					$('#bannar_coming').fadeIn('slow');
+				});
 			}
 			else{
 				msgLoop(i);
@@ -89,9 +90,7 @@ $('document').ready(function(){
 		loopSix();
 		loopSeven();
 		
-		$(this).fadeOut('slow').delay(9000).promise().done(function(){
-			$('#bannar_coming').fadeIn('slow');
-		});
+		$(this).fadeOut('slow');
 	});
 
 	$('#bannar_coming').click(function(){
