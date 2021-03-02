@@ -89,14 +89,14 @@ $('document').ready(function(){
 		loopSix();
 		loopSeven();
 		
-		$(this).fadeOut('slow').delay(10000).promise().done(function(){
+		$(this).fadeOut('slow').delay(9000).promise().done(function(){
 			$('#bannar_coming').fadeIn('slow');
 		});
 	});
 
 	$('#bannar_coming').click(function(){
 		$('.bannar').addClass('bannar-come');
-		$(this).fadeOut('slow').delay(10000).promise().done(function(){
+		$(this).fadeOut('slow').delay(8000).promise().done(function(){
 			$('#cake_fadein').fadeIn('slow');
 		});
 	});
