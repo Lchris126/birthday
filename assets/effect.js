@@ -30,6 +30,9 @@ $('document').ready(function(){
 	});
 	
 	$('#story').click(function(){
+		$(this).fadeOut('slow').delay(5000).promise().done(function () {
+			$('#play').fadeIn('slow');
+		});
 		$('.message').fadeIn('slow');
 		
 		var i;
@@ -39,9 +42,7 @@ $('document').ready(function(){
 			i=i+1;
 			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
 			if(i==50){
-				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
-					$('#play').fadeIn('slow');
-				});
+				$("p:nth-child(49)").fadeOut('slow');
 				
 			}
 			else{
